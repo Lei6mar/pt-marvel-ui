@@ -6,7 +6,7 @@ import {
   MatDialogTitle,
   MatDialogContent,
 } from '@angular/material/dialog';
-import { CharacterResponse } from '../../../services/model/character.model';
+import { Result } from '../../../services/model/character.model';
 
 @Component({
   selector: 'app-character',
@@ -17,7 +17,7 @@ import { CharacterResponse } from '../../../services/model/character.model';
 })
 export class CharacterComponent {
 
-  characterResponse!: CharacterResponse;
+  characterResponse!: Result;
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: any) {
     this.characterResponse = data
